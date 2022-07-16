@@ -1,11 +1,11 @@
 import React, {HtmlHTMLAttributes, useState} from "react";
 import { useDispatch } from "react-redux";
 import { addTask } from "../features/ListReducer/actions";
-
+import './TaskInput.css'
 
 
 export const TaskInput = () => {
-
+//adding dispatch
     const dispatch = useDispatch()
 
     const [value,setValue] = useState<string>('')
@@ -18,13 +18,13 @@ export const TaskInput = () => {
       
     }
 
-  return <div>
+  return <>
     
-    <input 
-    placeholder="co masz zrobic" 
+    <input className="input"
+    placeholder="...Lista zadan zadan Lista..." 
     onChange={(event:React.ChangeEvent<HTMLInputElement>)=>{setValue(event.target.value)}}
     value= {value}
     onKeyPress= {onKeyPress}
     />
-    </div>
+    </>
 }

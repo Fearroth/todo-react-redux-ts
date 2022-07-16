@@ -1,0 +1,58 @@
+.taskContainer{
+    border: solid 1px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+align-items: center;
+    width:500px;
+    height: 40px;
+  
+    
+    /* display:flex;
+    
+    align-items: center;
+    justify-content: center;
+    background-color:"grey";
+    border: solid 1px;
+    column-gap: 10px; */
+    
+    /* width:40%  */
+}
+
+
+
+
+.button_checkbox{
+   
+    padding: 5px;
+    width:5%;
+}
+
+.task{
+    font-size: 25px;
+    flex-grow:10;
+    width:65%;
+    text-decoration: solid;
+}
+
+.button{
+  border:none;
+  background: none;
+    /* border-style : 1px  solid;  */
+    width:10%
+    
+    
+    
+}
+
+
+
+.hide{
+    visibility:hidden
+}
+
+.done{
+    color:grey;
+    text-decoration: line-through;
+    font-size: 20px;
+}

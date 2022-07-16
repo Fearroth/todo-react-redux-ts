@@ -4,6 +4,7 @@ import { TaskItem } from "./TaskItem"
 
 export const addTask = (name:string) =>{
     return {
+        
         type:'ADD_TASK',
         payload: {
             name,
@@ -11,20 +12,20 @@ export const addTask = (name:string) =>{
     } as const
 }
 
-export const updateTask =(item:TaskItem) => {
+export const updateTask =(id:number) => {
   return {
     type:"UPDATE_TASK",
     payload: {
-        item,
+        id,
     }
   } as const
 }
 
-export const deleteTask =(item:TaskItem) => {
+export const deleteTask =(id:number) => {
   return {
     type: "DELETE_TASK",
     payload:{
-        item,
+        id,
     } 
   } as const 
 }
@@ -42,7 +43,7 @@ export type ListAction = ReturnType<typeof addTask> |  ReturnType<typeof updateT
 //lista ma przeyzc f5
 
 // bug 
-// znikanie i zaznaczanie wszystkiego
+// znikanie i zaznaczanie wszystkiego  ok
 
 
 //create app plus redux typescript do ogarniecia jak dziala

@@ -5,11 +5,13 @@ import { getList } from "../app/getList";
 const ListItems = ()=>{
     const tasks = useSelector(getList)
  
-    return <div>
+    return <>
         {tasks.map((task) => (
+            <div key={task.id}>
             <Item  task={task}/>
+            </div>
         ))}
-    </div>
+    </>
 }
 
 export default ListItems

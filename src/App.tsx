@@ -4,10 +4,11 @@ import './App.css';
 import ListItems from './components/ListItems';
 import { TaskInput } from './components/TaskInput';
 function App() {
-  return (<>
-    <div><TaskInput/></div>
-    <div><ListItems/></div>
-    </>
+  return (<div className='container'>
+    <div className='header'>TODOS</div>
+    <div className='taskInput'><TaskInput/></div>
+    <div className='listItems'><ListItems/></div>
+    </div>
   );
 }
 
