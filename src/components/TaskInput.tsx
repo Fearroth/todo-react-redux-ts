@@ -12,6 +12,9 @@ export const TaskInput = () => {
 
     const onKeyPress = (event:React.KeyboardEvent<HTMLInputElement>) => {
         if (event.code === 'Enter'){
+            if(value === ''){
+                return
+            }
             dispatch(addTask(value))
             setValue('')
         }

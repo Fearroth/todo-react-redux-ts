@@ -21,6 +21,8 @@ export const updateTask =(id:number) => {
   } as const
 }
 
+
+
 export const deleteTask =(id:number) => {
   return {
     type: "DELETE_TASK",
